@@ -1,20 +1,22 @@
 # Importamos pyqt5
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow
-from PyQt5 import uic
-from 
+
+from PyQt5 import QtWidgets
+from UI_Principal import Ui_UnitConversor
 #instalacion de pyqt5: "pip install pyqt5 pyqt5-tools"
 
 
-def main():
-    print("Hello, World!")
+class mainwindow(QtWidgets.QMainWindow):
 
-###
-# clase distancia
+    def __init__(self):
+        super(mainwindow, self).__init__()
+        self.ui = Ui_UnitConversor()
+        self.ui.setupUi(self)
 
-#
-#sdjfjsdbhbsjdfb
-###
+app = QtWidgets.QApplication([])
+application = mywindow()
+application.show()
+sys.exit(app.exec())
 
 
 
