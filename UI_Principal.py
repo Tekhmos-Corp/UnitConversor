@@ -30,7 +30,7 @@ class Ui_UnitConversor(object):
         sizePolicy.setHeightForWidth(self.main_dropdown.sizePolicy().hasHeightForWidth())
         self.main_dropdown.setSizePolicy(sizePolicy)
         self.main_dropdown.setObjectName("main_dropdown")
-        self.main_dropdown.addItem("HOla")
+        self.main_dropdown.addItem("")
         self.main_dropdown.addItem("")
         self.main_dropdown.addItem("")
         self.main_dropdown.addItem("")
@@ -102,7 +102,7 @@ class Ui_UnitConversor(object):
     def retranslateUi(self, UnitConversor):
         _translate = QtCore.QCoreApplication.translate
         UnitConversor.setWindowTitle(_translate("UnitConversor", "Unit Conversor"))
-        self.label.setText(_translate("UnitConversor", "TdD Unit Conversor"))
+        self.label.setText(_translate("UnitConversor", "Tekhmos Unit Conversor"))
         self.main_dropdown.setItemText(0, _translate("UnitConversor", "--"))
         self.main_dropdown.setItemText(1, _translate("UnitConversor", "Distance"))
         self.main_dropdown.setItemText(2, _translate("UnitConversor", "Area"))
